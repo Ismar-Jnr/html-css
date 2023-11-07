@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+        <h2>Listas ordenadas</h2>
+            <ol type="I" start="1">
+                <!--Tag <ol> faz uma lista ordenada, e a css type dentro da tag, define a numeração da lista, podendo ser numeros, letras, algarismos romanos, e outros.
+                A css start, define qual o ponto de partida, ex: start="4", começa a contar a partir do numero 4-->
+                <!-- Tipos ordenados: 1 A a I i-->
+                <li>Acordar</li>
+                <li>Ligar para o João</li>
+                <li>Tomar café</li>
+                <li>Escovar os dents</li>
+                <li>Ir para faculdade</li>
+                <li>Voltar pra casa</li>
+                <li>Jantar</li>
+                <li>Dormir</li>
+            </ol>
+
+        <h2>Listas não ordenadas</h2>
+            <ul type="circle">
+                <!--Tag <ul> faz listas não ordenadas, e a css type mostra o sinal a frente, podendo ser circulos ou quadrados
+                    Tipos não ordenados ("disc, circle ou square")-->
+                <li>Pão</li>
+                <li>Leite</li>
+                <li>Mateigo</li>
+                <li>Alface</li>
+                <li>Tomate</li>
+                <li>Feijão</li>
+                <li>Arroz</li>
+            </ul>
+
+        <h2>Minhas linguagens favoritas</h2>
+            <ol>
+                <li>Antigas</li>
+                    <ol type="a">
+                        <li>Clipper</li>
+                        <li>Fortran</li>
+                        <li>Visual Basic</li>
+                        <li>Delphi</li>
+                    </ol>
+                <li>Novas</li>
+                <ol type="a" start="5"><!--Start="5" faz com que a segunda lista ordenada comece na letra "e", para dar sequencia da primeira lista ordenada-->
+                    <li>PHP</li>
+                    <li>C#</li>
+                    <li>JavaScript</li>
+                    <li>Kotlin</li>
+                </ol>
+            </ol>
+
+        <h2>Meus jogos favoritos</h2>
+            <ol>
+                <li>NES</li>
+
+                    <ul type="disc">
+                        <li>Mario Bros</li>
+                            <ul type="circle">
+                                <li>Mario Bros 3</li>
+                                <li>Mario: Lost Levels</li>
+                            </ul>
+                        <li>Ninja Gaiden</li>
+                    </ul>
+                    
+                <li>SNES</li>
+
+                    <ul type="disc">
+                        <li>Mario</li>
+                        <li>Donkey Kong</li>
+                    </ul>
+
+                <li>PlayStation</li>
+                    <ul type="disc">
+                        <li>Final Fantasy</li>
+                        <li>Castlevania</li>
+                    </ul>
+            </ol>
+    
+        <h2>Lista de Definições</h2> 
+            <dl>
+                <p>Em Lista de Definições trabalhamos com tags conjuntas, são elas: dl, dt e dd. <br>A tag dl cria a lista, enquanto as outras moldam a mesma. <br>Após a criação da lista, usamos a tag dt para definir um termo e a tag dd para descrever o termo em questão.<br>Veja no Exeplo a seguir:</p>
+                <dt>Termo</dt>
+                <dd>Descrição</dd>
+                <dt>HTML</dt>
+                <dd>Linguagem de marcação para a criação de conteúdo de um site</dd>
+
+                <dt>CSS</dt>
+                <dd>Linguagem de marcação para a criação do design de um site</dd>
+
+                <dt>JavaScript</dt>
+                <dd>Linguagemd e programação para a criação de interatividade de um site.</dd>
+            </dl>
+</body>
+</html>

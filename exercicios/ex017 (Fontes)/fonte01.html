@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Fontes em CSS</title>
+    <style>
+
+        body{
+            font-family:'Work Sans', Arial, Helvetica, sans-serif;
+
+            /*
+             Medidas Absolutas
+             cm, mm, in, px, pt, pc            
+            
+             Medidas Relativas
+             em, ex, rem, vw, vh, %
+
+             16px geralmente é igual a 1em
+            */
+            font-size: 1.5em;
+            /* Pesos de fontes
+                lighter, normal, bold, bolder*/
+
+
+            font-weight: lighter;
+            font-style: italic;
+            text-decoration: underline;
+            
+        }
+
+        h1{
+                
+
+                /*
+                shorthand font 
+                - font-style -> font-weight -> font-size -> font-family
+
+                font-family: 'Work Sans' sans-serif;
+                font-weight: bolder;
+                font-size: 3em;
+                font-style: italic;
+                */
+                font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+        h2{
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorum quas officia recusandae. Illum sit, accusantium, dolorum ipsa fuga, quod provident cumque numquam optio tenetur deleniti laboriosam quibusdam praesentium deserunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, incidunt! Provident consequatur, itaque minima deleniti nesciunt quis fugit, atque obcaecati hic asperiores iure tempora ipsam placeat quisquam, expedita voluptatem corrupti!</p>
+        <h2>Subtítulo do exercício</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam provident eos sequi, quos facere esse hic possimus perferendis aut doloremque deleniti ratione eius numquam quo nisi distinctio sapiente qui ipsa.</p>
+
+        
+    
+</body>
+</html>

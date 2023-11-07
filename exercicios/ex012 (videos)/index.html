@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    
+            <p>Este vídeo está hospedado no meu próprio servidor</p><br><br>
+            <!--Exemplos de como colocar um video no site-->
+            <p>Este é um exemplo do video mp4</p>
+            <video src="midia/video-mp4.mp4" width="500" controls></video>
+            <br><br><br><br><br><br>
+            <p>Este é um exemplo de video webm</p>
+            <video src="midia/video-webm.webm" width="500" controls></video>
+            <br><br><br><br><br><br><br>
+            <p>Este é um exemplo de video mkv</p>
+            <video src="midia/video-mkv.mkv" width="500" controls></video>
+            <br><br><br><br><br><br>
+            
+            <!--Essa parte do codigo será para o navegador escolher a melhor opçao de video-->
+            <!-- Por exemplo: Se o navegador nao suporta um certo tipo de video, entao abra a opção seguinte, basicamene, como um desvio condicional em linguagem C -->
+            
+            <!--O Parametro width="800" define o tamanho do video em 800.
+            O Parametro poster="imagens/..." define a tumb-nail do video
+            o paramentro controls permite que o usuario tenha aceso aos controles de play, volume, tamanho de tela e mais. -->
+            <p> Este é um exemplo com o tamanho do video em 800. </p>
+            <p>Este video está hospedado na própria página <br>Ele está sendo escolhido por ordem de prioridade, do menor para o maior, porem isso pode gerar um custo absurdo para o cliente. Abaixo há um exemplo, de uma outra forma de colocar videos, com menos custos.</p>
+            <video width="800" poster="imagens/foto-g.png" controls autoplay loop>
+                <!--Os sources abaixo, devem ser colocados em ordem crescente
+                Ou seja, do menor arquivo para o maior, dessa forma ele irá tentar abrir o menor arquivo primeiro, caso nao consiga ele irá para o segundo e assim sucessivamente.
+                Caso nao consiga abrir nenhum video, ele mostrará o paragrafo depois do ultimo source. "Seu navegador nao pode reproduzir video"-->
+                <source src="midia/video-mp4.mp4" type="video/mp4">
+                <source src="midia/video-mkv.mkv" type="video/mp4">
+                <source src="midia/video-webm.webm" type="video/webm">
+                <source src="midia/original.mp4" type="video/mp4">
+                <p>Seu navegador nao tem compatibilidade com reprodução de video.</p>
+            </video>
+           
+    <h1>Inserindo vídeos do Youtube</h1>
+    <p>Este video esta hospedado no youtube, dessa forma, o cliente ou proprietario do site, nao terá custos de hospedagem. Basta ele hospedar o video no YouTube e executa-lo na sua página web. </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=_T7fjnl9HVHGvjOh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+</body>
+</html>
